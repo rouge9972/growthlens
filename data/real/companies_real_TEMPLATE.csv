@@ -1,0 +1,13 @@
+company_id,name,vertical,country,last_round_stage,last_round_eur_m,months_since_last_round,founder_track_record,tam_eur_bn,patents,is_regulated,network_effect,headcount,rev_growth_yoy_pct,traffic_growth_yoy_pct,headcount_growth_6m_pct,burn_multiple,raised_within_12m
+EX01,Example Co 1 (REPLACE ME),fintech,Germany,Series A,12,16,2,20,1,1,0,90,,,,,1
+EX02,Example Co 2 (REPLACE ME),saas,United Kingdom,Series A,9,20,1,15,0,0,1,60,,,,,1
+EX03,Example Co 3 (REPLACE ME),healthtech,France,Seed,3,10,0,8,0,1,0,25,,,,,0
+EX04,Example Co 4 (REPLACE ME),ai_ml,Sweden,Series A,18,18,2,35,3,0,1,110,,,,,1
+EX05,Example Co 5 (REPLACE ME),climatetech,Netherlands,Series A,14,24,1,40,2,0,0,80,,,,,0
+EX06,Example Co 6 (REPLACE ME),proptech,Spain,Seed,2,8,0,6,0,0,0,18,,,,,0
+EX07,Example Co 7 (REPLACE ME),cybersecurity,Ireland,Series A,16,19,2,22,4,0,1,95,,,,,1
+EX08,Example Co 8 (REPLACE ME),fintech,Italy,Seed,4,30,1,12,0,1,0,35,,,,,0
+EX09,Example Co 9 (REPLACE ME),saas,Germany,Series A,11,15,1,18,1,0,1,70,,,,,1
+EX10,Example Co 10 (REPLACE ME),edtech,France,Seed,2,40,0,5,0,0,0,20,,,,,0
+EX11,Example Co 11 (REPLACE ME),healthtech,United Kingdom,Series A,20,22,2,30,2,1,0,130,,,,,0
+EX12,Example Co 12 (REPLACE ME),ai_ml,Estonia,Seed,5,12,1,28,1,0,1,40,,,,,0

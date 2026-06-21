@@ -89,6 +89,21 @@ does not), so it validates the **harness** and the score's discriminative power 
 same metrics become a real validation. See the generated report's "Path to real
 validation" section.
 
+### Real validation (free public data)
+To test against *real* companies, hand-collect a sample using
+[`docs/real_validation_protocol.md`](docs/real_validation_protocol.md) (the key
+discipline is avoiding survivorship bias), fill
+[`data/real/companies_real_TEMPLATE.csv`](data/real/companies_real_TEMPLATE.csv),
+then:
+```bash
+python scripts/run_real_backtest.py --csv data/real/companies_real.csv
+```
+The actual model runs on the features observable for free; unobservable inputs
+(revenue growth, burn multiple) are neutrally imputed and contribute nothing to
+the ranking. The report states observability coverage, so nothing is overstated.
+The gap between this real AUC and the full-feature synthetic backtest estimates
+what a paid data feed actually buys.
+
 ## Outputs
 - `data/processed/companies_scored.csv` — full ranked universe
 - `data/processed/memos/*.md` — top-N investment memos
