@@ -1,0 +1,12 @@
+# GrowthLens runtime dependencies (all free / open-source).
+# For local install prefer: pip install -e ".[dev]"  (see docs/setup_guide.md)
+pandas>=2.0
+numpy>=1.24
+pyyaml>=6.0
+requests>=2.31
+jinja2>=3.1
+faker>=24.0
+yfinance>=0.2.40
+plotly>=5.20
+streamlit>=1.33
+pytest>=8.0

@@ -1,0 +1,66 @@
+# =============================================================================
+# GrowthLens — GE Readiness Score configuration
+# -----------------------------------------------------------------------------
+# Every weight, threshold and cap that drives the score lives here, NOT in code.
+# This is deliberate: an investment process must be auditable and reproducible.
+# Change a number here, re-run the pipeline, and the whole ranking updates with a
+# full record of what assumption produced it. (See docs/methodology_whitepaper.md)
+# =============================================================================
+
+# ---- Pillar weights -------------------------------------------------------
+# The six pillars of the GE Readiness Score. Must sum to 1.0 (validated at load).
+pillar_weights:
+  growth_signal:      0.28   # Is the company actually growing? (revenue/traffic proxies)
+  timing:             0.18   # Time since last round vs. the typical raise cadence
+  team:               0.16   # Team expansion + founder track record
+  market:             0.20   # TAM and sector momentum
+  capital_efficiency: 0.10   # Burn discipline relative to growth
+  moat:               0.08   # Defensibility proxies (IP, network effects, regulation)
+
+# ---- Sector momentum (z-scored sector tailwind, hand-set 0..1) -------------
+# Source: rolling 4-quarter VC deployment trend by vertical. In production this
+# is computed from the ingestion layer; here it is a documented prior.
+sector_momentum:
+  fintech:     0.62
+  healthtech:  0.71
+  climatetech: 0.83
+  saas:        0.66
+  ai_ml:       0.90
+  cybersecurity: 0.68
+  proptech:    0.41
+  edtech:      0.38
+
+# ---- Timing curve ----------------------------------------------------------
+# GE rounds (Series B+) typically arrive 14-26 months after the prior round.
+# Score peaks inside that window and decays on either side.
+timing:
+  ideal_min_months: 14
+  ideal_max_months: 26
+  hard_floor_months: 4      # too soon after a round -> low readiness
+  hard_ceiling_months: 48   # very stale -> likely a flat/down situation or distress
+
+# ---- Capital efficiency ----------------------------------------------------
+# "Growth-adjusted burn": we reward revenue growth per euro of last round.
+# Implemented as a bounded ratio; caps prevent a single outlier dominating.
+capital_efficiency:
+  burn_multiple_good: 1.0    # net burn / net new ARR <= 1.0 is excellent
+  burn_multiple_bad: 3.0     # >= 3.0 is poor
+
+# ---- Score banding (for memo language and dashboard colouring) -------------
+bands:
+  - {min: 80, label: "Tier 1 — Priority diligence"}
+  - {min: 65, label: "Tier 2 — Active watch"}
+  - {min: 50, label: "Tier 3 — Monitor"}
+  - {min: 0,  label: "Tier 4 — Pass for now"}
+
+# ---- Comparable public peers by vertical (tickers for the comps engine) ----
+# Public growth-equity reference set used to benchmark private targets.
+public_comps:
+  fintech:       [ADYEY, PYPL, NU, AFRM]
+  healthtech:    [VEEV, DOCS, HIMS]
+  climatetech:   [ENPH, FSLR, RUN]
+  saas:          [CRM, NOW, DDOG, SNOW]
+  ai_ml:         [PLTR, AI, NVDA]
+  cybersecurity: [CRWD, ZS, S]
+  proptech:      [OPEN, Z]
+  edtech:        [DUOL, COUR]

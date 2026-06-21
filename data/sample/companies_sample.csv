@@ -1,0 +1,51 @@
+company_id,name,vertical,country,city,founded_year,last_round_stage,last_round_eur_m,last_round_date,months_since_last_round,rev_growth_yoy_pct,traffic_growth_yoy_pct,headcount,headcount_growth_6m_pct,founder_track_record,tam_eur_bn,burn_multiple,patents,is_regulated,network_effect,data_provenance
+GL0000,Gould-Fosterwise,edtech,Spain,Madrid,2023,Series B,27.5,2025-03-16,15,61.1,24.4,35,27.8,0,14.5,1.77,3,0,1,synthetic
+GL0001,Jonesstack,proptech,Germany,Hamburg,2025,Seed,0.6,2024-12-15,18,37.2,25.2,18,8.4,0,6.6,1.07,0,0,1,synthetic
+GL0002,Diazcore,ai_ml,France,Lyon,2016,Series A,15.9,2024-10-15,20,12.6,10.5,34,58.0,1,4.4,2.32,0,0,0,synthetic
+GL0003,Lewisstack,ai_ml,Estonia,Tallinn,2022,Series A,12.5,2024-09-15,21,64.3,24.1,47,36.0,2,3.8,2.38,2,0,0,synthetic
+GL0004,Davisstack,edtech,Estonia,Tallinn,2021,Seed,1.2,2025-02-14,16,75.8,40.5,25,17.8,0,29.4,1.78,1,0,0,synthetic
+GL0005,Serranoio,fintech,United Kingdom,Manchester,2021,Seed,0.9,2026-05-16,1,26.4,72.0,30,5.5,1,19.1,1.61,1,0,1,synthetic
+GL0006,MccoyAI,ai_ml,Italy,Milan,2018,Series B,23.7,2025-06-16,12,67.5,25.7,50,-22.0,0,17.4,2.56,2,0,1,synthetic
+GL0007,Rayly,edtech,Germany,Munich,2021,Series C,121.9,2025-01-15,17,24.4,1.1,52,2.1,2,4.0,1.66,1,0,0,synthetic
+GL0008,Cherryhub,cybersecurity,Germany,Munich,2025,Series C,99.9,2025-01-15,17,28.9,0.6,26,24.7,0,3.2,1.23,2,0,1,synthetic
+GL0009,Garrisonio,fintech,Italy,Milan,2016,Series B,52.2,2025-09-15,9,38.3,22.1,40,7.8,0,10.5,1.82,0,1,0,synthetic
+GL0010,Duncanstack,healthtech,United Kingdom,London,2019,Seed,2.9,2024-12-15,18,101.2,83.8,39,48.3,0,24.4,2.59,2,1,1,synthetic
+GL0011,Whitestack,healthtech,Germany,Berlin,2020,Series B,31.2,2026-05-16,1,60.4,37.2,29,-12.3,1,5.6,2.26,3,0,0,synthetic
+GL0012,Davis-Josephly,saas,Estonia,Tallinn,2014,Seed,0.6,2024-07-16,23,15.3,6.9,54,-11.0,1,22.6,1.87,2,0,0,synthetic
+GL0013,Brownly,healthtech,Italy,Milan,2020,Series A,10.4,2023-10-17,32,19.8,40.1,60,19.0,0,13.7,2.3,0,1,0,synthetic
+GL0014,Waters-OwensLabs,saas,Spain,Madrid,2024,Series A,16.4,2024-11-15,19,175.9,94.0,93,25.6,0,16.1,1.87,0,0,0,synthetic
+GL0015,Ward-Wrightflow,healthtech,Italy,Milan,2022,Series B,23.3,2023-09-16,33,42.4,64.7,107,36.3,1,14.5,1.57,3,1,0,synthetic
+GL0016,HaleAI,fintech,Netherlands,Rotterdam,2024,Series A,9.4,2025-02-14,16,55.4,23.4,46,13.6,1,2.7,1.03,2,1,0,synthetic
+GL0017,Andrewsly,fintech,Germany,Berlin,2023,Series A,10.2,2024-11-15,19,81.7,42.6,47,-2.9,0,4.2,2.95,1,0,0,synthetic
+GL0018,Golden-BlairLabs,edtech,Spain,Barcelona,2020,Series A,7.2,2025-11-15,7,153.9,68.8,30,7.9,1,11.3,2.07,2,0,0,synthetic
+GL0019,Lynch-Jonesly,proptech,Netherlands,Amsterdam,2025,Seed,0.9,2024-07-16,23,96.4,15.1,42,4.4,0,52.9,1.1,3,0,0,synthetic
+GL0020,Barneshub,proptech,Italy,Milan,2021,Series B,30.7,2024-06-16,24,42.5,-7.0,19,33.9,0,15.7,0.24,2,0,0,synthetic
+GL0021,Fisher-Haydenwise,proptech,Spain,Madrid,2025,Series A,9.8,2024-06-16,24,142.9,119.3,41,12.1,0,60.4,3.23,1,0,0,synthetic
+GL0022,Duranwise,edtech,Italy,Milan,2024,Seed,2.5,2024-07-16,23,38.5,21.9,37,1.5,1,5.3,1.76,0,0,0,synthetic
+GL0023,Peterson-Bellio,cybersecurity,United Kingdom,Cambridge,2023,Series B,37.6,2023-09-16,33,77.6,27.7,82,14.9,1,12.9,1.71,1,0,0,synthetic
+GL0024,Riley-Bryantly,proptech,United Kingdom,Manchester,2017,Series A,14.0,2024-11-15,19,13.0,-10.8,24,25.6,0,7.2,1.12,2,0,0,synthetic
+GL0025,Duffywise,ai_ml,Italy,Milan,2020,Series B,33.8,2024-09-15,21,194.0,77.5,26,-8.7,0,23.7,0.55,2,0,1,synthetic
+GL0026,Beckhub,ai_ml,France,Lyon,2016,Series B,20.4,2025-07-16,11,103.8,40.5,14,10.1,0,12.5,0.79,2,0,1,synthetic
+GL0027,Lanely,proptech,France,Paris,2024,Seed,2.0,2024-11-15,19,90.2,60.4,48,3.5,2,11.0,2.01,1,0,0,synthetic
+GL0028,Cruzflow,fintech,Sweden,Stockholm,2020,Seed,2.0,2024-10-15,20,51.5,21.6,27,12.6,0,14.3,2.01,1,1,0,synthetic
+GL0029,Kelly-Carrstack,healthtech,Sweden,Stockholm,2019,Series A,9.8,2024-08-16,22,33.5,36.0,73,22.1,1,19.7,2.71,1,1,1,synthetic
+GL0030,Brown-Tateio,proptech,Ireland,Dublin,2022,Series C,178.8,2025-10-15,8,136.8,88.9,185,49.9,0,11.0,1.17,2,0,1,synthetic
+GL0031,RodgersLabs,healthtech,Sweden,Stockholm,2021,Series A,10.3,2024-07-16,23,76.3,4.8,81,16.9,1,2.4,1.26,1,1,0,synthetic
+GL0032,Rangel-Crawfordhub,proptech,France,Lyon,2021,Seed,3.4,2026-05-16,1,86.5,94.4,120,24.3,1,23.2,1.76,2,0,0,synthetic
+GL0033,Colecore,healthtech,Italy,Milan,2021,Series A,14.1,2025-07-16,11,49.8,56.0,18,-0.3,0,7.6,2.73,0,1,1,synthetic
+GL0034,Ware-Fuentesstack,healthtech,Spain,Barcelona,2020,Seed,0.7,2025-06-16,12,32.0,25.7,28,19.5,0,25.2,1.4,3,0,0,synthetic
+GL0035,RamirezAI,proptech,Italy,Milan,2025,Series A,15.4,2025-06-16,12,14.5,-10.3,49,22.3,0,10.2,1.0,1,0,0,synthetic
+GL0036,Rosario-Hernandezcore,proptech,Spain,Barcelona,2024,Series A,6.8,2026-01-14,5,42.9,49.6,50,32.2,1,11.1,2.89,2,0,0,synthetic
+GL0037,Hernandezstack,cybersecurity,Estonia,Tallinn,2019,Seed,1.4,2025-05-16,13,50.0,47.1,42,-15.8,2,7.0,1.26,2,0,0,synthetic
+GL0038,Smithhub,edtech,Italy,Milan,2022,Seed,3.3,2025-09-15,9,62.0,45.8,18,23.9,0,10.3,1.31,0,0,1,synthetic
+GL0039,Bakerly,ai_ml,Sweden,Stockholm,2023,Series A,12.2,2024-04-16,26,150.8,88.8,44,19.8,0,12.5,1.46,1,0,0,synthetic
+GL0040,Barneswise,ai_ml,Ireland,Dublin,2020,Seed,3.0,2024-08-16,22,160.5,98.4,37,47.8,0,7.5,2.4,2,0,0,synthetic
+GL0041,Knighthub,proptech,Spain,Barcelona,2025,Series B,59.9,2025-02-14,16,33.7,28.0,165,14.0,0,6.9,0.7,2,0,0,synthetic
+GL0042,Clementsly,saas,Sweden,Stockholm,2019,Series A,10.1,2024-10-15,20,60.1,46.7,71,26.2,0,11.7,1.99,1,0,1,synthetic
+GL0043,Lam-Deleonhub,fintech,Estonia,Tallinn,2022,Series B,30.4,2024-10-15,20,87.0,51.2,108,69.4,1,9.1,2.51,1,1,1,synthetic
+GL0044,Yatesflow,healthtech,Estonia,Tallinn,2022,Series A,12.5,2025-12-15,6,65.3,-5.2,39,34.0,0,12.5,2.37,0,1,1,synthetic
+GL0045,OlsonAI,fintech,Sweden,Stockholm,2022,Series C,112.2,2024-02-15,28,51.5,50.1,38,16.3,0,30.1,0.23,0,1,0,synthetic
+GL0046,LeeLabs,healthtech,United Kingdom,London,2014,Series C,100.3,2024-03-17,27,100.7,64.3,190,-0.5,0,18.7,1.41,2,0,1,synthetic
+GL0047,Martin-Petersonhub,healthtech,Germany,Munich,2024,Series B,51.0,2024-05-16,25,67.0,68.6,275,58.4,0,22.5,1.89,1,0,0,synthetic
+GL0048,Garciahub,ai_ml,Ireland,Dublin,2018,Series B,31.3,2024-08-16,22,60.0,23.0,12,36.0,0,14.9,2.73,2,0,0,synthetic
+GL0049,Herrerastack,proptech,Estonia,Tallinn,2017,Series B,42.2,2025-08-15,10,54.1,23.5,104,41.8,0,18.0,1.22,0,0,1,synthetic

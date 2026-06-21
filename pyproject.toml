@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "growthlens"
+version = "0.1.0"
+description = "European growth-stage private-market intelligence and GE Readiness scoring."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Alessandro" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "jinja2>=3.1",
+    "faker>=24.0",
+    "yfinance>=0.2.40",
+    "plotly>=5.20",
+    "streamlit>=1.33",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+growthlens = "scripts.run_pipeline:main"
