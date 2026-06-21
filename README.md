@@ -56,10 +56,15 @@ growthlens/
 │   ├── scoring/ge_readiness.py      # the six-pillar model  ← core
 │   ├── memos/generate.py            # automated IC-style memos
 │   ├── pulse/digest.py              # weekly Market Pulse digest
+│   ├── backtest/                    # precision@K / lift / AUC harness
+│   │   ├── simulate.py              # honest simulated outcomes (demo)
+│   │   ├── metrics.py               # precision@K, lift, rank AUC, decile lift
+│   │   └── run.py                   # backtest orchestration + report
 │   └── pipeline.py                  # end-to-end orchestration
 ├── app/dashboard.py                 # Streamlit dashboard
 ├── scripts/
 │   ├── run_pipeline.py              # CLI entry point
+│   ├── run_backtest.py              # simulated backtest CLI
 │   └── make_sample_data.py          # writes the 50-company sample
 ├── docs/
 │   ├── methodology_whitepaper.md    # the methodology, argued in full
@@ -69,6 +74,20 @@ growthlens/
 ├── data/sample/companies_sample.csv # committed 50-company sample
 ├── pyproject.toml · requirements.txt · LICENSE · .gitignore
 ```
+
+## Validation
+A precision-at-K backtest harness ships in `growthlens.backtest`:
+```bash
+python scripts/run_backtest.py --n 400
+```
+It scores a point-in-time snapshot, then measures how well the ranking concentrates
+eventual raisers at the top — **precision@K**, **lift@K**, **rank AUC**, and
+**decile lift**. On the synthetic universe it runs against *simulated* outcomes
+(driven partly by signals the model sees, partly by a hidden factor + noise it
+does not), so it validates the **harness** and the score's discriminative power —
+**not** real-world prediction. Swap the simulator for real outcome labels and the
+same metrics become a real validation. See the generated report's "Path to real
+validation" section.
 
 ## Outputs
 - `data/processed/companies_scored.csv` — full ranked universe

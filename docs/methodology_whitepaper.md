@@ -116,9 +116,16 @@ next hour, not where the fund deploys capital.
   held fixed; week-over-week deltas (Market Pulse) are computed on a stable ID join.
 - **Sector-momentum priors are currently hand-set**; the roadmap computes them from
   rolling VC-deployment data in the ingestion layer.
-- **No outcome backtest yet.** Once a licensed feed supplies round outcomes, the
-  natural validation is a precision-at-K backtest: of the top-20 GRS companies in
-  period *t*, how many raised a qualifying round by *t + 12 months*?
+- **Backtest harness built; real validation pending labels.** A precision-at-K
+  backtest harness now ships with the project (`growthlens.backtest`). On the
+  synthetic universe it runs against *simulated* outcomes — outcomes deliberately
+  driven partly by signals the model sees and partly by a hidden factor and noise
+  it does not. This validates the harness and demonstrates discriminative power
+  against a known target (rank AUC well above 0.5, top-K lift above 1), but it is
+  **not** evidence the model predicts real fundraising. Real validation requires
+  real labels: of the top-20 companies at time *t*, how many raised a qualifying
+  round by *t + 12 months*? The harness accepts a real-labels join without any
+  change to the metrics code — only the data source changes.
 - **Weights are priors, not fitted.** They encode a defensible thesis and are meant
   to be challenged in review — which is the entire point of keeping them in a
   visible config file.
