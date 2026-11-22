@@ -1,9 +1,18 @@
-# GrowthLens 📈
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo-light.svg" alt="growthlens" width="360">
+  </picture>
+</p>
+
+# GrowthLens
 
 **European growth-stage private-market intelligence.** GrowthLens ranks growth-stage
 startups by their readiness to raise a Growth Equity round, auto-generates one-page
 investment memos, benchmarks them against public comparables, and tracks weekly
 market shifts — all from a modular, tested Python pipeline with a Streamlit dashboard.
+
+**▶ Live demo: [growthlens.streamlit.app](https://growthlens.streamlit.app/)**
 
 > **Data honesty up front:** the universe is **synthetic** by default (labelled as
 > such everywhere). Private funding data is paywalled across the industry
@@ -17,7 +26,7 @@ market shifts — all from a modular, tested Python pipeline with a Streamlit da
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-pytest -q                                   # 5 tests, ~1s
+pytest -q                                   # 12 tests, ~2s
 python scripts/run_pipeline.py --n 200      # ingest → score → memos → digest
 streamlit run app/dashboard.py              # interactive dashboard
 ```

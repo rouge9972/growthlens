@@ -30,7 +30,11 @@ from growthlens.cleaning.normalize import clean_companies
 from growthlens.scoring.ge_readiness import score_companies, explain_score, PILLAR_FUNCS
 from growthlens.ingestion.macro_ecb import fetch_policy_rate
 
-st.set_page_config(page_title="GrowthLens", page_icon="📈", layout="wide")
+ASSETS = os.path.join(os.path.dirname(__file__), "..", "assets")
+st.set_page_config(page_title="GrowthLens",
+                   page_icon=os.path.join(ASSETS, "icon-512.png"), layout="wide")
+st.logo(os.path.join(ASSETS, "logo-dark.svg"),
+        icon_image=os.path.join(ASSETS, "icon-dark.svg"), size="large")
 
 
 @st.cache_data(show_spinner=False)
@@ -43,7 +47,6 @@ def load_scored(n: int, seed: int) -> pd.DataFrame:
 cfg = C.load_scoring_config()
 
 # ---- Sidebar controls ------------------------------------------------------
-st.sidebar.title("GrowthLens")
 st.sidebar.caption("European growth-stage market intelligence")
 n = st.sidebar.slider("Universe size", 50, 500, 200, step=50)
 seed = st.sidebar.number_input("Seed", value=42, step=1)

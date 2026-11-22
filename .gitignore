@@ -17,3 +17,6 @@ data/processed/*
 .DS_Store
 .idea/
 .vscode/
+
+# Local tool databases
+ruvector.db
